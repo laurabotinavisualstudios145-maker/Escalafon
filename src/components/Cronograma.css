@@ -1,0 +1,114 @@
+/* Shared section styles are in App.css */
+
+.cronograma-alert {
+  display: flex;
+  gap: 16px;
+  background: #FFF8E1;
+  border: 1px solid #FFD54F;
+  border-left: 4px solid var(--accent);
+  border-radius: var(--radius-md);
+  padding: 20px 24px;
+  margin-bottom: 32px;
+  color: var(--gray-800);
+}
+
+.crono-alert-icon { font-size: 24px; flex-shrink: 0; }
+
+.cronograma-alert p {
+  margin-top: 6px;
+  font-size: 14px;
+  color: var(--gray-700);
+  line-height: 1.6;
+}
+
+.crono-table-wrap {
+  overflow-x: auto;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+}
+
+.crono-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--white);
+}
+
+.crono-table thead tr {
+  background: var(--primary);
+  color: var(--white);
+}
+
+.crono-table th {
+  padding: 14px 18px;
+  font-size: 13px;
+  font-weight: 700;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.crono-table td {
+  padding: 16px 18px;
+  border-bottom: 1px solid var(--gray-100);
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+.crono-table tbody tr:last-child td { border-bottom: none; }
+
+.crono-table tbody tr:hover { background: var(--gray-50); }
+
+.crono-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px; height: 32px;
+  background: var(--primary);
+  color: var(--white);
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.crono-desc { max-width: 360px; font-weight: 500; }
+
+.crono-date {
+  background: var(--gray-100);
+  border-radius: var(--radius-sm);
+  padding: 4px 10px;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.crono-days {
+  background: #E3F2FD;
+  color: var(--primary);
+  border-radius: var(--radius-sm);
+  padding: 4px 10px;
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.crono-resp {
+  background: var(--accent);
+  color: var(--primary-dark);
+  border-radius: var(--radius-sm);
+  padding: 4px 12px;
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.crono-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-top: 16px;
+  color: var(--gray-600);
+  font-size: 13px;
+  background: var(--gray-100);
+  border-radius: var(--radius-sm);
+  padding: 12px 16px;
+}
+
+.crono-note svg { flex-shrink: 0; margin-top: 2px; }

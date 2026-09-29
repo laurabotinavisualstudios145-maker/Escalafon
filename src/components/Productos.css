@@ -1,0 +1,248 @@
+.prod-section { background: var(--gray-50); }
+
+.prod-nota {
+  display: flex;
+  gap: 12px;
+  background: #E3F2FD;
+  border: 1px solid #90CAF9;
+  border-radius: var(--radius-md);
+  padding: 16px 20px;
+  margin-bottom: 32px;
+  font-size: 14px;
+  color: var(--gray-700);
+  line-height: 1.6;
+}
+
+.prod-grupos {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.prod-grupo {
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-left: 4px solid transparent;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: box-shadow 0.2s;
+}
+
+.prod-grupo:hover { box-shadow: var(--shadow-md); }
+.prod-grupo.open { box-shadow: var(--shadow-md); }
+
+.prod-grupo-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 22px;
+  background: none;
+  border: none;
+  border-left: 4px solid;
+  cursor: pointer;
+  text-align: left;
+  font-family: 'Inter', sans-serif;
+  transition: background 0.15s;
+}
+
+.prod-grupo-header:hover { background: var(--gray-50); }
+
+.prod-grupo-icon {
+  width: 48px; height: 48px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  flex-shrink: 0;
+}
+
+.prod-grupo-info { flex: 1; }
+
+.prod-grupo-codigo {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 3px;
+}
+
+.prod-grupo-titulo {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--gray-900);
+  margin-bottom: 3px;
+}
+
+.prod-grupo-count {
+  font-size: 12px;
+  color: var(--gray-500);
+  background: var(--gray-100);
+  padding: 2px 8px;
+  border-radius: 100px;
+}
+
+.prod-arrow { flex-shrink: 0; }
+
+.prod-grupo-body {
+  padding: 0 22px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.prod-subgrupo {
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.prod-sub-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  background: var(--gray-50);
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.prod-sub-letra {
+  color: var(--white);
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 100px;
+  white-space: nowrap;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.prod-sub-titulo {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--gray-800);
+}
+
+.prod-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 14px 16px;
+}
+
+.prod-chip {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--gray-50);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-sm);
+  padding: 6px 12px;
+  transition: box-shadow 0.15s;
+}
+
+.prod-chip:hover { box-shadow: var(--shadow-sm); }
+
+.chip-codigo {
+  font-size: 13px;
+  font-weight: 700;
+  font-family: 'Courier New', monospace;
+}
+
+.chip-pts {
+  font-size: 12px;
+  background: var(--primary);
+  color: var(--white);
+  padding: 2px 7px;
+  border-radius: 100px;
+  font-weight: 600;
+}
+
+/* Exclusiones */
+.exclusion-box {
+  background: var(--white);
+  border: 2px solid #F5C6C2;
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  margin-bottom: 20px;
+}
+
+.exclusion-header {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.exclusion-header span { font-size: 28px; flex-shrink: 0; }
+
+.exclusion-header h3 {
+  font-size: 18px;
+  font-weight: 800;
+  color: #C0392B;
+  margin-bottom: 4px;
+}
+
+.exclusion-header p {
+  font-size: 14px;
+  color: var(--gray-600);
+}
+
+.exclusion-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+
+.exclusion-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 10px 14px;
+  background: #FDECEA;
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  color: #8B2020;
+}
+
+.exclusion-item span:first-child {
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+/* OTROS */
+.otros-box {
+  display: flex;
+  gap: 16px;
+  background: var(--primary-dark);
+  color: var(--white);
+  border-radius: var(--radius-md);
+  padding: 22px 24px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.otros-icon { font-size: 28px; flex-shrink: 0; }
+
+.otros-box h3 {
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--accent-light);
+  margin-bottom: 6px;
+}
+
+.otros-box p { color: rgba(255,255,255,0.85); }
+
+.otros-email {
+  color: var(--accent-light);
+  font-weight: 700;
+  margin-left: 4px;
+  text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+  .exclusion-grid { grid-template-columns: 1fr; }
+}
