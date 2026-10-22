@@ -6,14 +6,14 @@ const requisitos = [
     id: 'hoja-vida',
     icon: '📋',
     color: '#0057B8',
-    title: 'Hoja de Vida (DO-F 036)',
+    title: 'Hoja de Vida (Formato DO-F 036)',
     subtitle: 'Requisito habilitante inicial obligatorio',
     badge: 'Excluyente',
     badgeColor: 'danger',
     content: [
       {
         tipo: 'info',
-        texto: 'Diligenciar en su totalidad la Solicitud de Movimiento de Hoja de Vida (Formato DO-F 036).'
+        texto: 'Como condición indispensable y excluyente para iniciar el proceso, el profesor debe diligenciar en su totalidad la Solicitud de Movimiento de Hoja de Vida (Formato DO-F 036).'
       },
       {
         tipo: 'warning',
@@ -21,11 +21,11 @@ const requisitos = [
       },
       {
         tipo: 'info',
-        texto: 'Adjuntar la autorización de notificación electrónica (Código DE-F-068), indicando el correo institucional.'
+        texto: 'Adicionalmente, se debe diligenciar y adjuntar la autorización de notificación electrónica (Código DE-F-068), indicando como correo en el que recibirá notificaciones, el correo institucional @profesores.'
       },
       {
         tipo: 'danger',
-        texto: 'Sin este soporte debidamente firmado, la postulación no podrá ser procesada ni continuará en el proceso del CAP.'
+        texto: 'Restricción del sistema: Sin este soporte debidamente firmado, la postulación no podrá ser procesada ni continuará en el proceso del Comité de Asignación de Puntaje.'
       },
     ]
   },
@@ -33,25 +33,26 @@ const requisitos = [
     id: 'experiencia',
     icon: '🎓',
     color: '#1A7A4A',
-    title: 'Experiencia Docente',
-    subtitle: 'Requisitos de permanencia institucional',
+    title: 'Experiencia Docente y Permanencia Institucional',
+    subtitle: 'Requisitos de experiencia profesoral y permanencia en el escalafón',
     badge: 'Acuerdo 09/2025',
     badgeColor: 'primary',
     content: [
-      { tipo: 'check', texto: 'Evaluación de desempeño satisfactoria en la UNIAJC.' },
-      { tipo: 'check', texto: 'Tiempo de permanencia en la categoría del escalafón requerida.' },
-      { tipo: 'check', texto: 'Experiencia laboral como profesor(a) universitario(a) en una IES.' },
-      { tipo: 'check', texto: 'Certificación de experiencia expedida por Gestión Humana con antigüedad no superior a 1 año.' },
+      { tipo: 'check', texto: 'Evaluación de desempeño satisfactoria en la UNIAJC, contemplado en el formato DO-F-036.' },
+      { tipo: 'check', texto: 'Tiempo de permanencia en la categoría del escalafón requerida para el estudio del ascenso o cambio de nivel salarial, contemplado en el Acuerdo 09 de 2025.' },
+      { tipo: 'check', texto: 'Experiencia laboral como profesor(a) universitario(a) en una Institución de Educación Superior (IES).' },
+      { tipo: 'check', texto: 'Vigencia de certificaciones: La certificación de experiencia laboral docente deberá haber sido expedida por Gestión Humana con una antigüedad no superior a un (1) año a la fecha de cierre de la convocatoria.' },
+      { tipo: 'info', texto: 'Fecha de corte: el 30 de junio de 2026 se establece como la fecha oficial de cierre para la contabilización del tiempo de experiencia docente.' },
     ],
     extra: {
-      titulo: 'La certificación de experiencia debe contener:',
+      titulo: 'La certificación de experiencia laboral docente emitida por Gestión Humana deberá contener, como mínimo, los siguientes datos:',
       items: [
-        'Fecha de ingreso',
-        'Tipo de vinculación (tiempo completo, medio tiempo o hora cátedra)',
-        'Tiempo de vinculación',
-        'Unidad académica de adscripción',
-        'Cargo desempeñado',
-        'Asignación académica por semestre (número de horas durante todo el período)',
+        'Fecha de ingreso.',
+        'Tipo de vinculación (tiempo completo, medio tiempo o hora cátedra).',
+        'Tiempo de vinculación.',
+        'Unidad académica de adscripción.',
+        'Cargo desempeñado.',
+        'Asignación académica por semestre, indicando el número de horas correspondientes durante todo el período certificado.',
       ]
     }
   },
@@ -59,25 +60,37 @@ const requisitos = [
     id: 'idioma',
     icon: '🌐',
     color: '#7B61FF',
-    title: 'Segundo Idioma',
-    subtitle: 'Certificación avalada por el MEN',
+    title: 'Requisito Habilitante de Segundo Idioma',
+    subtitle: 'Certificación avalada por el Ministerio de Educación Nacional (MEN)',
     badge: 'Resolución 018035/2021',
     badgeColor: 'purple',
     content: [
-      { tipo: 'check', texto: 'Examen avalado por el Ministerio de Educación Nacional (MEN).' },
-      { tipo: 'check', texto: 'Certificación de propósito general que acredite mínimo 2 habilidades lingüísticas.' },
-      { tipo: 'check', texto: 'El examen debe ser mínimo de Tipo EGP (propósito general).' },
+      { tipo: 'check', texto: 'Para dar cumplimiento al requisito de segunda lengua previsto en el Acuerdo No. 09 de 2025, el examen presentado por el profesor deberá estar avalado por el Ministerio de Educación Nacional (MEN) conforme a la Resolución No. 018035 del 21 de septiembre de 2021 (o la norma que la modifique, sustituya o derogue).' },
+      { tipo: 'check', texto: 'Se aceptarán certificaciones de propósito general que acrediten, como mínimo, dos (2) habilidades lingüísticas entre las evaluadas por el examen correspondiente (reading, listening, speaking, writing).' },
+      { tipo: 'check', texto: 'El examen por presentar debe ser como mínimo de Tipo EGP (propósito general).' },
     ],
     tabla: {
-      headers: ['Casa Evaluadora', 'Examen', 'A1', 'A2', 'B1', 'B2', 'C1', 'C2'],
+      headers: [
+        'Formato',
+        'Tipo',
+        'Casa Evaluadora',
+        'Examen',
+        'Sin Escala',
+        'ALTE Nivel 1 (A1)',
+        'ALTE Nivel 1 (A2)',
+        'ALTE Nivel 2 (B1)',
+        'ALTE Nivel 3 (B2)',
+        'ALTE Nivel 4 (C1)',
+        'ALTE Nivel 5 (C2)'
+      ],
       rows: [
-        ['Berlitz', 'Berlitz Online', '20-39', '40-59', '60-74', '75-89', '90-100', '—'],
-        ['CaMLA', 'MET', '—', '< 39', '40-52', '53-63', '64+', '—'],
-        ['CaMLA', 'MTELP', '0-35', '36-42', '43-55', '56-64', '65+', '—'],
-        ['ETS', 'TOEFL ITP', '—', '337', '460', '543', '627', '—'],
-        ['ETS', 'TOEIC', '—', '246-380', '381-540', '541-700', '701-910', '910+'],
-        ['British Council', 'APTIS General', '0-10', '11-20', '21-30', '31-40', '41-50', '—'],
-        ['British Council', 'APTIS for Teachers', '0-10', '11-20', '21-30', '31-40', '41-50', '—'],
+        ['EGP', 'Prof', 'Berlitz', 'Berlitz Online Proficiency Test', '—', '80 - 223', '20-39', '40-59', '60-74', '75- 89', '90-100'],
+        ['EGP', 'Prof', 'CaMLA', 'MET - Michigan English Test', '—', '—', '< 39', '40-52', '53-63', '64 <', '—'],
+        ['EGP', 'Prof', 'CaMLA', 'MTELP - Michigan Test of English Language Proficiency', '—', '0-35', '36 - 42', '43-55', '56-64', '65 <', '—'],
+        ['EGP', 'Prof', 'ETS', 'TOEFL ITP', '—', '—', '337', '460', '543', '627', '—'],
+        ['EGP', 'Prof', 'ETS', 'TOEIC', '—', '—', '246 - 380', '381 - 540', '541 - 700', '701-910', '910+'],
+        ['EGP', 'Prof', 'British Council', 'APTIS General', '—', '0-10', '11-20', '21- 30', '31- 40', '41- 50', '—'],
+        ['EGP', 'Prof', 'British Council', 'APTIS for Teachers', '—', '0-10', '11-20', '21- 30', '31- 40', '41- 50', '—'],
       ]
     }
   },
@@ -85,22 +98,22 @@ const requisitos = [
     id: 'titular',
     icon: '🏆',
     color: '#C0392B',
-    title: 'Categoría Profesor Titular',
-    subtitle: 'Requisito especial para la máxima categoría',
+    title: 'Requisito Especial para la Categoría de Profesor Titular',
+    subtitle: 'Condiciones documentales específicas para el ascenso a la máxima categoría',
     badge: 'Acuerdo 09/2025',
     badgeColor: 'danger',
     content: [
       {
         tipo: 'subtitulo',
-        texto: 'a) Primera vez en la categoría (D1 o D):'
+        texto: 'a) Para aspirantes por primera vez a la categoría (Aplica para Profesores de Carrera, Ocasionales Tiempo Completo y Medio Tiempo en el Subnivel Titular 1 - D1, y para Profesores Hora Cátedra en la categoría Profesor Titular - D):'
       },
       {
         tipo: 'info',
-        texto: 'Presentar un producto de investigación evaluado por pares externos registrados en MinCiencias, que otorgue crédito institucional a la UNIAJC.'
+        texto: 'El profesor deberá presentar para evaluación ante pares externos reconocidos en el listado de MinCiencias, un producto de investigación que constituya un aporte significativo a la docencia, la ciencia, la técnica, el arte o las humanidades, el cual debe otorgar crédito institucional obligatorio a la UNIAJC.'
       },
       {
         tipo: 'info',
-        texto: 'Adjuntar Informe Final del Proyecto de Investigación en etapa de culminación, avalado por la Decanatura de Investigaciones (Instructivo IN-I-003) con su acta de cierre.'
+        texto: 'Para tal fin, deberá anexar el Informe Final del Proyecto de Investigación en etapa de culminación debidamente avalado por la Decanatura de Investigaciones, utilizando como referencia técnica el Instructivo IN-I-003, junto con su respectiva acta de cierre.'
       },
       {
         tipo: 'subtitulo',
@@ -108,7 +121,7 @@ const requisitos = [
       },
       {
         tipo: 'success',
-        texto: 'Si ya sustentó y aprobó el producto en una convocatoria anterior, no necesita presentarlo de nuevo. Informe en su radicación el nombre del producto y el año de aprobación.'
+        texto: 'Si el profesor ya sustentó y aprobó un producto de investigación que constituya un aporte significativo a la docencia, la ciencia, la técnica, el arte o las humanidades, el cual debe otorgar crédito institucional obligatorio a la UNIAJC en una convocatoria anterior dentro de la misma categoría de Titular, no será necesario presentar el documento ni realizar la sustentación nuevamente. Para hacer efectiva esta exención, el postulante deberá informar detalladamente en un documento PDF que ya cumplió con el requisito, indicando el nombre completo del producto y el año de la convocatoria donde conste su aprobación.'
       },
     ]
   },
@@ -197,7 +210,7 @@ export default function Requisitos() {
 
                   {req.tabla && (
                     <div className="req-tabla-wrap">
-                      <p className="req-extra-title" style={{marginBottom: 10}}>Puntajes mínimos requeridos (Ejemplo: Inglés)</p>
+                      <p className="req-extra-title" style={{marginBottom: 10}}>Tabla N°1: Segundo idioma - Ejemplo Inglés (Puntajes mínimos requeridos)</p>
                       <div style={{overflowX:'auto'}}>
                         <table className="req-tabla">
                           <thead>
@@ -213,7 +226,7 @@ export default function Requisitos() {
                         </table>
                       </div>
                       <p style={{fontSize:11,color:'var(--gray-600)',marginTop:8}}>
-                        * Fuente: Resolución 018035 del 21 de septiembre de 2021, pág. 2
+                        * Tabla 1: Resolución 018035 del 21 de septiembre de 2021, pág. 2
                       </p>
                     </div>
                   )}

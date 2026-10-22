@@ -69,9 +69,10 @@
   font-size: 14px;
 }
 
-.crono-desc { max-width: 360px; font-weight: 500; }
+.crono-desc { max-width: 380px; font-weight: 500; }
 
 .crono-date {
+  display: inline-block;
   background: var(--gray-100);
   border-radius: var(--radius-sm);
   padding: 4px 10px;
@@ -90,13 +91,14 @@
 }
 
 .crono-resp {
+  display: inline-block;
   background: var(--accent);
   color: var(--primary-dark);
   border-radius: var(--radius-sm);
   padding: 4px 12px;
   font-size: 12px;
   font-weight: 700;
-  white-space: nowrap;
+  line-height: 1.4;
 }
 
 .crono-note {
@@ -109,6 +111,7 @@
   background: var(--gray-100);
   border-radius: var(--radius-sm);
   padding: 12px 16px;
+  line-height: 1.6;
 }
 
 .crono-note svg { flex-shrink: 0; margin-top: 2px; }

@@ -4,25 +4,26 @@ import './DespuesDelEnvio.css';
 const fases = [
   {
     icon: '🔍',
-    titulo: 'Revisión por el CAP',
+    titulo: '6.1. Proceso de revisión y evaluación por el CAP',
     color: '#0057B8',
     pasos: [
-      'El CAP revisará y verificará los soportes cargados.',
-      'Es responsabilidad del profesor que los soportes cumplan los requisitos de existencia.',
-      'La Institución puede verificar la información y adelantar actuaciones administrativas ante inconsistencias.',
-      'Los resultados de quienes no presenten reclamaciones quedarán en firme al día hábil siguiente del vencimiento del plazo.',
+      'Es responsabilidad exclusiva del profesor(a) examinar minuciosamente que los soportes cargados cumplan con los requisitos de existencia y calidad establecidos.',
+      'Cada profesor es responsable de la veracidad, autenticidad e integridad de la información aportada.',
+      'La Institución podrá verificar la información presentada y adelantar las actuaciones administrativas a que haya lugar cuando se evidencien inconsistencias, falsedad documental o información que no corresponda con la realidad.',
+      'Los resultados de los profesores(as) que no presenten reclamaciones dentro del término establecido quedarán en firme al día hábil siguiente del vencimiento del plazo para interponerlas.',
+      'Para quienes presenten reclamación, los resultados quedarán en firme una vez sea comunicada la decisión adoptada por el Comité de Asignación de Puntaje (CAP).',
     ]
   },
   {
     icon: '📬',
-    titulo: 'Resultados y Reclamaciones',
+    titulo: '6.2. Trámite de reclamaciones frente a resultados preliminares',
     color: '#1A7A4A',
     pasos: [
-      'Plazo perentorio: 3 días hábiles desde la publicación de resultados.',
-      'Canal exclusivo: correo ecarmenza@admon.uniajc.edu.co (ODP).',
-      'La reclamación debe estar debidamente sustentada con los aspectos a revisar y soportes técnicos.',
-      'El CAP tendrá hasta 8 días hábiles para analizar y emitir decisión definitiva.',
-      'Las reclamaciones extemporáneas o por canales incorrectos serán rechazadas.',
+      'Plazo perentorio: Las reclamaciones deberán presentarse formalmente dentro de los tres (3) días hábiles siguientes a la publicación de los resultados de la convocatoria.',
+      'Canal oficial exclusivo: La Oficina de Desarrollo Profesoral (ODP) será el único canal oficial para la recepción y trámite de las reclamaciones, únicamente a través del correo electrónico institucional CAP@admon.uniajc.edu.co.',
+      'Requisitos del escrito: La reclamación debe estar debidamente sustentada, indicando de manera clara los aspectos objeto de revisión y aportando los soportes técnicos que respalden la solicitud.',
+      'Tiempos de respuesta: La ODP verificará los requisitos formales y remitirá las solicitudes al CAP, el cual dispondrá de hasta ocho (8) días hábiles para analizar, resolver y emitir una decisión definitiva.',
+      'Rechazo extemporáneo: Las reclamaciones presentadas por fuera del término establecido o por un canal diferente serán rechazadas por extemporaneidad o incumplimiento del procedimiento. Las consultas relacionadas con el estado de la convocatoria deberán presentarse únicamente a través de la ODP.',
     ]
   },
 ];
@@ -83,15 +84,15 @@ export default function DespuesDelEnvio() {
         {/* Contacto */}
         <div className="contacto-box">
           <div className="contacto-content">
-            <h3>📧 Canal Oficial de Contacto</h3>
-            <p>Oficina de Desarrollo Profesoral (ODP) — Único canal para reclamaciones y consultas:</p>
-            <a href="mailto:ecarmenza@admon.uniajc.edu.co" className="contacto-email">
-              ecarmenza@admon.uniajc.edu.co
+            <h3>📧 Canal Oficial Exclusivo de Contacto</h3>
+            <p>Oficina de Desarrollo Profesoral (ODP) — Único canal oficial para la recepción y trámite de reclamaciones:</p>
+            <a href="mailto:CAP@admon.uniajc.edu.co" className="contacto-email">
+              CAP@admon.uniajc.edu.co
             </a>
           </div>
           <div className="contacto-warn">
             <span>⚠️</span>
-            <p>No se recibirán ni tramitarán reclamaciones presentadas por medios diferentes al canal oficial.</p>
+            <p>No se recibirán ni tramitarán reclamaciones presentadas por medios diferentes al canal oficial ni por fuera de los términos establecidos.</p>
           </div>
         </div>
       </div>

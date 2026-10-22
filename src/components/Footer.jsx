@@ -37,8 +37,8 @@ export default function Footer() {
           <h4>Contacto Oficial</h4>
           <div className="footer-contact-item">
             <span></span>
-            <a href="mailto:ecarmenza@admon.uniajc.edu.co">
-              ecarmenza@admon.uniajc.edu.co
+            <a href="mailto:CAP@admon.uniajc.edu.co">
+              CAP@admon.uniajc.edu.co
             </a>
           </div>
           <div className="footer-contact-item">
@@ -54,7 +54,7 @@ export default function Footer() {
             </a>
           </div>
           <div className="footer-note">
-            <strong>ODP:</strong> Oficina de Desarrollo Profesoral
+            <strong>ODP:</strong> Oficina de Desarrollo Profesoral · <strong>CAP:</strong> Comité de Asignación de Puntaje
           </div>
         </div>
       </div>
