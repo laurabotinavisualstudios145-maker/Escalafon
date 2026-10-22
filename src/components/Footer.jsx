@@ -1,4 +1,6 @@
 import React from 'react';
+import logoUniajc from '../assets/logo-uniajc.png';
+import logoFooter2 from '../assets/logo-footer-2.png';
 import './Footer.css';
 
 export default function Footer() {
@@ -8,7 +10,11 @@ export default function Footer() {
     <footer className="footer">
       <div className="footer-inner">
         <div className="footer-brand">
-          <div className="footer-logo">UNIAJC</div>
+          <div className="footer-logos">
+            <img src={logoUniajc} alt="Institución Universitaria Antonio José Camacho" className="footer-logo-img" />
+            <div className="footer-logo-sep" />
+            <img src={logoFooter2} alt="Logo Institucional" className="footer-logo-img footer-logo-secondary" />
+          </div>
           <p>Institución Universitaria<br/>Antonio José Camacho</p>
           <div className="footer-divider" />
           <p className="footer-convoc">Escalafón Profesoral 2026</p>

@@ -148,6 +148,16 @@
   line-height: 1.5;
 }
 
+.paso-nota-link {
+  color: var(--primary);
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.paso-nota-link:hover {
+  color: var(--primary-dark);
+}
+
 /* Formatos */
 .formatos-box {
   background: var(--gray-50);

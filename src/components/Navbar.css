@@ -28,19 +28,22 @@
 .navbar-brand {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 14px;
   cursor: pointer;
   flex-shrink: 0;
 }
 
-.brand-logo {
-  background: var(--accent);
-  color: var(--primary-dark);
-  font-weight: 900;
-  font-size: 13px;
-  padding: 6px 10px;
-  border-radius: var(--radius-sm);
-  letter-spacing: 0.5px;
+.brand-logo-img {
+  height: 44px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.brand-divider {
+  width: 1px;
+  height: 32px;
+  background: rgba(255, 255, 255, 0.25);
 }
 
 .brand-text {

@@ -17,7 +17,20 @@ const pasos = [
       '6. En el menú izquierdo, seleccionar la opción Documentos.',
       '7. En la barra superior izquierda de Filtrar por palabra, escribir el código del documento o formato requerido para su descarga (Formatos principales: DO-F 036, DO-F 039, DE-F-068).',
     ],
-    nota: 'Nota de apoyo: El profesor dispone de una guía audiovisual técnica para la descarga ingresando al link institucional: GRABACION INTRUCTIVO IN-1-003.webm.',
+    nota: (
+      <>
+        Nota de apoyo: El profesor dispone de una guía audiovisual técnica para la descarga ingresando al link institucional:{' '}
+        <a
+          href="https://admonuniajcedu-my.sharepoint.com/:v:/g/personal/desarrolloprofesoral_admon_uniajc_edu_co/IQDytwBCM6IwRKHLy3R0yB44AaPKtAj4KEUTeGEuec2bLOw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=lLyOBo"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="paso-nota-link"
+        >
+          GRABACION INTRUCTIVO IN-1-003.webm
+        </a>
+        .
+      </>
+    ),
   },
   {
     num: 2,
@@ -32,6 +45,20 @@ const pasos = [
     ],
     link: { texto: 'Abrir formulario Microsoft Forms', url: 'https://forms.cloud.microsoft/r/5P51BXaSNW' },
     nota: null,
+    nota: (
+      <>
+        Nota de apoyo: El profesor dispone de una guía audiovisual técnica para diligenciar el link de la convocatoria:{' '}
+        <a
+          href="https://admonuniajcedu-my.sharepoint.com/:v:/g/personal/desarrolloprofesoral_admon_uniajc_edu_co/IQAf7H0CvafxRqQrla20ZyZwAbMwgCeIcscQvfAl7SC7S8s?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=ZNxilu"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="paso-nota-link"
+        >
+          INSTRUCTIVO-POSTULACION-CONVOCATORIA IN-1-003.webm
+        </a>
+        .
+      </>
+    ),
   },
   {
     num: 3,

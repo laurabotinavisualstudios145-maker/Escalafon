@@ -86,9 +86,14 @@ export default function DespuesDelEnvio() {
           <div className="contacto-content">
             <h3>📧 Canal Oficial Exclusivo de Contacto</h3>
             <p>Oficina de Desarrollo Profesoral (ODP) — Único canal oficial para la recepción y trámite de reclamaciones:</p>
-            <a href="mailto:CAP@admon.uniajc.edu.co" className="contacto-email">
-              CAP@admon.uniajc.edu.co
-            </a>
+            <div className="contacto-actions">
+              <a href="mailto:CAP@admon.uniajc.edu.co" className="contacto-email">
+                CAP@admon.uniajc.edu.co
+              </a>
+              <a href="https://www.uniajc.edu.co/wp-content/uploads/2026/10/TÉRMINOS-DE-REFERENCIA-2026-2-1.pdf" target="_blank" rel="noopener noreferrer" className="contacto-email">
+                Lee aquí los términos de referencia
+              </a>
+            </div>
           </div>
           <div className="contacto-warn">
             <span>⚠️</span>

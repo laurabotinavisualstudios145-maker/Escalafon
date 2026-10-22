@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import logoUniajc from '../assets/logo-uniajc.png';
 import './Navbar.css';
 
 const sections = [
@@ -40,7 +41,8 @@ export default function Navbar() {
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="navbar-inner">
         <div className="navbar-brand" onClick={() => scrollTo('inicio')}>
-          <div className="brand-logo">UNIAJC</div>
+          <img src={logoUniajc} alt="Institución Universitaria Antonio José Camacho" className="brand-logo-img" />
+          <div className="brand-divider" />
           <div className="brand-text">
             <span className="brand-title">Escalafón Profesoral</span>
             <span className="brand-year">Convocatoria 2026</span>
